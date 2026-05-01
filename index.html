@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anogre Demo Projects</title>
+  <meta name="description" content="Access all demo projects for Anogre agency.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: '#1e293b', // slate-800
+            primary: '#3b82f6', // blue-500
+            muted: '#94a3b8'    // slate-400
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a; /* slate-900 */
+      color: #f8fafc; /* slate-50 */
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col items-center p-6 sm:p-12">
+  
+  <div class="max-w-5xl w-full">
+    <header class="mb-12 border-b border-slate-800 pb-6">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Demo Directory</h1>
+      <p class="text-lg text-muted max-w-2xl">Browse the collection of project prototypes, templates, and UI implementations created for our clients.</p>
+    </header>
+
+    <main>
+      <!-- Projects Grid -->
+      <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Social Media Promotion -->
+        <li>
+          <a href="social-media-promotion/index.html" class="block group relative bg-surface border border-slate-700 rounded-xl overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:-translate-y-1">
+            <div class="aspect-[16/9] bg-slate-900 w-full flex items-center justify-center overflow-hidden border-b border-slate-700">
+               <!-- Icon representing the project -->
+               <svg class="w-12 h-12 text-slate-500 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 21v-7.5a2.25 2.25 0 01-4.5 0v-3a2.25 2.25 0 114.5 0v3m-4.5 0a2.25 2.25 0 11-4.5 0v-3m0 0a2.25 2.25 0 114.5 0M9 3v3a2.25 2.25 0 11-4.5 0V3m0 0a2.25 2.25 0 114.5 0"></path>
+               </svg>
+            </div>
+            <div class="p-6">
+              <h2 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Social Media Promotion</h2>
+              <p class="text-sm text-muted">A modern, responsive marketing platform UI built for social growth agencies.</p>
+            </div>
+            <!-- Interactive Arrow -->
+            <div class="absolute bottom-6 right-6 text-muted group-hover:text-primary transform translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+
+      <!-- Empty State / Add More -->
+      <div class="mt-12 text-center p-12 border border-dashed border-slate-700 rounded-xl bg-slate-800/30">
+        <svg class="mx-auto h-12 w-12 text-slate-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.5v15m7.5-7.5h-15" />
+        </svg>
+        <h3 class="text-lg font-medium text-slate-300">Add more projects</h3>
+        <p class="mt-2 text-sm text-muted">Create new folders in the demo directory and link them here.</p>
+      </div>
+    </main>
+
+    <footer class="mt-16 border-t border-slate-800 pt-8 text-center md:flex md:justify-between md:text-left">
+      <p class="text-sm text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Anogre Projects. All rights reserved.</p>
+      <div class="mt-4 md:mt-0 flex justify-center space-x-6 text-sm text-muted">
+        <a href="#" class="hover:text-primary transition-colors">Documentation</a>
+        <a href="#" class="hover:text-primary transition-colors">Settings</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
